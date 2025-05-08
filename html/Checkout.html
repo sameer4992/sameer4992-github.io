@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Checkout.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">TechnHub</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="cart.html">🛒 <span class="cart-count">3</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="checkout-progress">
+            <div class="progress-step active">
+                <span class="step-number">1</span>
+                <span class="step-label">Shipping</span>
+            </div>
+            <div class="progress-step">
+                <span class="step-number">2</span>
+                <span class="step-label">Payment</span>
+            </div>
+            <div class="progress-step">
+                <span class="step-number">3</span>
+                <span class="step-label">Review</span>
+            </div>
+        </div>
+
+        <div class="checkout-layout">
+            <section class="checkout-form">
+                <h2>Shipping Information</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="your@email.com">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" placeholder="John">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" placeholder="Doe">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" placeholder="123 Main St">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address2">Apt, Suite, etc. (Optional)</label>
+                        <input type="text" id="address2" placeholder="Apt 4B">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="New York">
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select id="country">
+                                <option value="">Select Country</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="UK">United Kingdom</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="state">State/Province</label>
+                            <select id="state">
+                                <option value="">Select State</option>
+                                <option value="CA">California</option>
+                                <option value="NY">New York</option>
+                                <option value="TX">Texas</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">ZIP/Postal Code</label>
+                            <input type="text" id="zip" placeholder="10001">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="(123) 456-7890">
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="save-info">
+                        <label for="save-info">Save this information for next time</label>
+                    </div>
+
+                    <div class="form-actions">
+                        <a href="cart.html" class="back-btn">← Back to Cart</a>
+                        <button type="submit" class="continue-btn">Continue to Payment</button>
+                    </div>
+                </form>
+            </section>
+
+            <aside class="order-summary">
+                <h2>Your Order</h2>
+                <div class="order-items">
+                    <div class="order-item">
+                        <div class="item-cover" style="background-color: #3a4a3a;"></div>
+                        <div class="item-details">
+                            <h3>JavaScript: The Complete Guide</h3>
+                            <p class="author">By Mark Thompson</p>
+                            <p class="price">$24.99</p>
+                        </div>
+                        <div class="item-quantity">×1</div>
+                    </div>
+
+                    <div class="order-item">
+                        <div class="item-cover" style="background-color: #4a3a4a;"></div>
+                        <div class="item-details">
+                            <h3>Modern JavaScript Frameworks</h3>
+                            <p class="author">By Sarah Johnson</p>
+                            <p class="price">$27.99</p>
+                        </div>
+                        <div class="item-quantity">×1</div>
+                    </div>
+
+                    <div class="order-item">
+                        <div class="item-cover" style="background-color: #3a4a4a;"></div>
+                        <div class="item-details">
+                            <h3>JavaScript Patterns</h3>
+                            <p class="author">By David Chen</p>
+                            <p class="price">$21.99</p>
+                        </div>
+                        <div class="item-quantity">×1</div>
+                    </div>
+                </div>
+
+                <div class="summary-section">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>$74.97</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Discount</span>
+                        <span class="discount">−$8.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span>Free</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax</span>
+                        <span>$5.25</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span class="total-price">$72.22</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 TechnHub. All rights reserved.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
